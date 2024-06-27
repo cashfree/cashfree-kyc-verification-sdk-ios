@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0008B1702C298C7800FE7D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B16F2C298C7800FE7D5D /* AppDelegate.swift */; };
+		0008B1722C298C7800FE7D5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B1712C298C7800FE7D5D /* SceneDelegate.swift */; };
+		0008B1742C298C7800FE7D5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B1732C298C7800FE7D5D /* ViewController.swift */; };
+		0008B1772C298C7800FE7D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0008B1752C298C7800FE7D5D /* Main.storyboard */; };
+		0008B1792C298C7A00FE7D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0008B1782C298C7A00FE7D5D /* Assets.xcassets */; };
+		0008B17C2C298C7A00FE7D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0008B17A2C298C7A00FE7D5D /* LaunchScreen.storyboard */; };
+		0008B1872C298C7A00FE7D5D /* KycVerificationSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B1862C298C7A00FE7D5D /* KycVerificationSampleAppTests.swift */; };
+		0008B1912C298C7A00FE7D5D /* KycVerificationSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B1902C298C7A00FE7D5D /* KycVerificationSampleAppUITests.swift */; };
+		0008B1932C298C7A00FE7D5D /* KycVerificationSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008B1922C298C7A00FE7D5D /* KycVerificationSampleAppUITestsLaunchTests.swift */; };
+		0008B1A62C298FD200FE7D5D /* KycVerificationSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008B1A02C298CC400FE7D5D /* KycVerificationSdk.framework */; };
+		0008B1A72C298FD200FE7D5D /* KycVerificationSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0008B1A02C298CC400FE7D5D /* KycVerificationSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0008B1832C298C7A00FE7D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0008B1642C298C7800FE7D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0008B16B2C298C7800FE7D5D;
+			remoteInfo = KycVerificationSampleApp;
+		};
+		0008B18D2C298C7A00FE7D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0008B1642C298C7800FE7D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0008B16B2C298C7800FE7D5D;
+			remoteInfo = KycVerificationSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0008B1A82C298FD200FE7D5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0008B1A72C298FD200FE7D5D /* KycVerificationSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0008B16C2C298C7800FE7D5D /* KycVerificationSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KycVerificationSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0008B16F2C298C7800FE7D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0008B1712C298C7800FE7D5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0008B1732C298C7800FE7D5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0008B1762C298C7800FE7D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0008B1782C298C7A00FE7D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0008B17B2C298C7A00FE7D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0008B17D2C298C7A00FE7D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0008B1822C298C7A00FE7D5D /* KycVerificationSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KycVerificationSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0008B1862C298C7A00FE7D5D /* KycVerificationSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSampleAppTests.swift; sourceTree = "<group>"; };
+		0008B18C2C298C7A00FE7D5D /* KycVerificationSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KycVerificationSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0008B1902C298C7A00FE7D5D /* KycVerificationSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSampleAppUITests.swift; sourceTree = "<group>"; };
+		0008B1922C298C7A00FE7D5D /* KycVerificationSampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0008B1A02C298CC400FE7D5D /* KycVerificationSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KycVerificationSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0008B1692C298C7800FE7D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008B1A62C298FD200FE7D5D /* KycVerificationSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B17F2C298C7A00FE7D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B1892C298C7A00FE7D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0008B1632C298C7800FE7D5D = {
+			isa = PBXGroup;
+			children = (
+				0008B16E2C298C7800FE7D5D /* KycVerificationSampleApp */,
+				0008B1852C298C7A00FE7D5D /* KycVerificationSampleAppTests */,
+				0008B18F2C298C7A00FE7D5D /* KycVerificationSampleAppUITests */,
+				0008B16D2C298C7800FE7D5D /* Products */,
+				0008B19F2C298CC400FE7D5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0008B16D2C298C7800FE7D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0008B16C2C298C7800FE7D5D /* KycVerificationSampleApp.app */,
+				0008B1822C298C7A00FE7D5D /* KycVerificationSampleAppTests.xctest */,
+				0008B18C2C298C7A00FE7D5D /* KycVerificationSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0008B16E2C298C7800FE7D5D /* KycVerificationSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0008B16F2C298C7800FE7D5D /* AppDelegate.swift */,
+				0008B1712C298C7800FE7D5D /* SceneDelegate.swift */,
+				0008B1732C298C7800FE7D5D /* ViewController.swift */,
+				0008B1752C298C7800FE7D5D /* Main.storyboard */,
+				0008B1782C298C7A00FE7D5D /* Assets.xcassets */,
+				0008B17A2C298C7A00FE7D5D /* LaunchScreen.storyboard */,
+				0008B17D2C298C7A00FE7D5D /* Info.plist */,
+			);
+			path = KycVerificationSampleApp;
+			sourceTree = "<group>";
+		};
+		0008B1852C298C7A00FE7D5D /* KycVerificationSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0008B1862C298C7A00FE7D5D /* KycVerificationSampleAppTests.swift */,
+			);
+			path = KycVerificationSampleAppTests;
+			sourceTree = "<group>";
+		};
+		0008B18F2C298C7A00FE7D5D /* KycVerificationSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0008B1902C298C7A00FE7D5D /* KycVerificationSampleAppUITests.swift */,
+				0008B1922C298C7A00FE7D5D /* KycVerificationSampleAppUITestsLaunchTests.swift */,
+			);
+			path = KycVerificationSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		0008B19F2C298CC400FE7D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0008B1A02C298CC400FE7D5D /* KycVerificationSdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0008B16B2C298C7800FE7D5D /* KycVerificationSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0008B1962C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleApp" */;
+			buildPhases = (
+				0008B1682C298C7800FE7D5D /* Sources */,
+				0008B1692C298C7800FE7D5D /* Frameworks */,
+				0008B16A2C298C7800FE7D5D /* Resources */,
+				0008B1A82C298FD200FE7D5D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KycVerificationSampleApp;
+			productName = KycVerificationSampleApp;
+			productReference = 0008B16C2C298C7800FE7D5D /* KycVerificationSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0008B1812C298C7A00FE7D5D /* KycVerificationSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0008B1992C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleAppTests" */;
+			buildPhases = (
+				0008B17E2C298C7A00FE7D5D /* Sources */,
+				0008B17F2C298C7A00FE7D5D /* Frameworks */,
+				0008B1802C298C7A00FE7D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0008B1842C298C7A00FE7D5D /* PBXTargetDependency */,
+			);
+			name = KycVerificationSampleAppTests;
+			productName = KycVerificationSampleAppTests;
+			productReference = 0008B1822C298C7A00FE7D5D /* KycVerificationSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0008B18B2C298C7A00FE7D5D /* KycVerificationSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0008B19C2C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleAppUITests" */;
+			buildPhases = (
+				0008B1882C298C7A00FE7D5D /* Sources */,
+				0008B1892C298C7A00FE7D5D /* Frameworks */,
+				0008B18A2C298C7A00FE7D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0008B18E2C298C7A00FE7D5D /* PBXTargetDependency */,
+			);
+			name = KycVerificationSampleAppUITests;
+			productName = KycVerificationSampleAppUITests;
+			productReference = 0008B18C2C298C7A00FE7D5D /* KycVerificationSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0008B1642C298C7800FE7D5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0008B16B2C298C7800FE7D5D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					0008B1812C298C7A00FE7D5D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0008B16B2C298C7800FE7D5D;
+					};
+					0008B18B2C298C7A00FE7D5D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 0008B16B2C298C7800FE7D5D;
+					};
+				};
+			};
+			buildConfigurationList = 0008B1672C298C7800FE7D5D /* Build configuration list for PBXProject "KycVerificationSampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0008B1632C298C7800FE7D5D;
+			productRefGroup = 0008B16D2C298C7800FE7D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0008B16B2C298C7800FE7D5D /* KycVerificationSampleApp */,
+				0008B1812C298C7A00FE7D5D /* KycVerificationSampleAppTests */,
+				0008B18B2C298C7A00FE7D5D /* KycVerificationSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0008B16A2C298C7800FE7D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008B17C2C298C7A00FE7D5D /* LaunchScreen.storyboard in Resources */,
+				0008B1792C298C7A00FE7D5D /* Assets.xcassets in Resources */,
+				0008B1772C298C7800FE7D5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B1802C298C7A00FE7D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B18A2C298C7A00FE7D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0008B1682C298C7800FE7D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008B1742C298C7800FE7D5D /* ViewController.swift in Sources */,
+				0008B1702C298C7800FE7D5D /* AppDelegate.swift in Sources */,
+				0008B1722C298C7800FE7D5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B17E2C298C7A00FE7D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008B1872C298C7A00FE7D5D /* KycVerificationSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0008B1882C298C7A00FE7D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008B1912C298C7A00FE7D5D /* KycVerificationSampleAppUITests.swift in Sources */,
+				0008B1932C298C7A00FE7D5D /* KycVerificationSampleAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0008B1842C298C7A00FE7D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0008B16B2C298C7800FE7D5D /* KycVerificationSampleApp */;
+			targetProxy = 0008B1832C298C7A00FE7D5D /* PBXContainerItemProxy */;
+		};
+		0008B18E2C298C7A00FE7D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0008B16B2C298C7800FE7D5D /* KycVerificationSampleApp */;
+			targetProxy = 0008B18D2C298C7A00FE7D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0008B1752C298C7800FE7D5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0008B1762C298C7800FE7D5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0008B17A2C298C7A00FE7D5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0008B17B2C298C7A00FE7D5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0008B1942C298C7A00FE7D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0008B1952C298C7A00FE7D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0008B1972C298C7A00FE7D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KycVerificationSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0008B1982C298C7A00FE7D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KycVerificationSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0008B19A2C298C7A00FE7D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KycVerificationSampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KycVerificationSampleApp";
+			};
+			name = Debug;
+		};
+		0008B19B2C298C7A00FE7D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KycVerificationSampleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KycVerificationSampleApp";
+			};
+			name = Release;
+		};
+		0008B19D2C298C7A00FE7D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KycVerificationSampleApp;
+			};
+			name = Debug;
+		};
+		0008B19E2C298C7A00FE7D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KycVerificationSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0008B1672C298C7800FE7D5D /* Build configuration list for PBXProject "KycVerificationSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0008B1942C298C7A00FE7D5D /* Debug */,
+				0008B1952C298C7A00FE7D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0008B1962C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0008B1972C298C7A00FE7D5D /* Debug */,
+				0008B1982C298C7A00FE7D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0008B1992C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0008B19A2C298C7A00FE7D5D /* Debug */,
+				0008B19B2C298C7A00FE7D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0008B19C2C298C7A00FE7D5D /* Build configuration list for PBXNativeTarget "KycVerificationSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0008B19D2C298C7A00FE7D5D /* Debug */,
+				0008B19E2C298C7A00FE7D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0008B1642C298C7800FE7D5D /* Project object */;
+}
