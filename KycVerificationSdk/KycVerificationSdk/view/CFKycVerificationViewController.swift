@@ -10,7 +10,8 @@ import WebKit
 
 @objc
 public protocol VerificationResponseDelegate {
-    func onVerificationCompletion(msg: String)
+    func onVerificationCompletion(verificationResponse: CFVerificationResponse)
+    func onErrorResponse(errorReponse: CFErrorResponse)
 }
 
 @objc
@@ -18,7 +19,7 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
     
     private var session: CFKycVerificationSession
     private var responseDelegate: VerificationResponseDelegate!
-    
+    private var currentFieldName: String?
     
     @IBOutlet weak var kycWebView: WKWebView!
     
@@ -38,10 +39,21 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
         setupWebViewConfigurations()
         openWebView()
         
+        
     }
     
     private func setupWebViewConfigurations() {
-        kycWebView.configuration.userContentController.add(self, name: "nativeProcess")
+        let webViewConfig = kycWebView.configuration
+        let userScript = WKUserScript(source: """
+                   var meta = document.createElement('meta');
+                   meta.name = 'viewport';
+                   meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+                   document.getElementsByTagName('head')[0].appendChild(meta);
+               """, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        
+        webViewConfig.userContentController.addUserScript(userScript)
+        webViewConfig.userContentController.add(self, name: "nativeProcess")
+        
         kycWebView.uiDelegate = self
         kycWebView.backgroundColor = UIColor.white
         kycWebView.navigationDelegate = self
@@ -54,16 +66,51 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
     }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("Start to Load")
+
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("Finish to load")
-        responseDelegate.onVerificationCompletion(msg: "test this")
+    
+    }
+    
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard let messageBody = message.body as? [String: Any],
+              let action = messageBody["action"] as? String,
+              let verificationData = messageBody["data"] as? String else { return }
+        let json = verificationData.data(using: .utf8)
+        guard let nonNilData = json else {
+            print("Data is nil")
+            return
+        }
+        if let webResponse: WebResponse = decodeJSON(from: nonNilData, as: WebResponse.self) {
+            switch action {
+            case "verificationResponse":
+                onVerificationResponse(webResponse)
+            case "webErrors":
+                onWebErrors(webResponse)
+            default:
+                break
+            }
+        }
         
     }
     
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        // Handle callback from web view
+    
+    func onVerificationResponse(_ data : WebResponse){
+        let verificationResponse = CFVerificationResponse()
+        verificationResponse.status = data.status
+        verificationResponse.form_id = data.form_id
+        responseDelegate.onVerificationCompletion(verificationResponse: verificationResponse)
     }
+    
+    func onWebErrors(_ data : WebResponse){
+        let errorResponse = CFErrorResponse()
+        errorResponse.statusCode = data.statusCode
+        errorResponse.message = data.message
+        responseDelegate.onErrorResponse(errorReponse: errorResponse)
+    }
+    
+    
+    
 }

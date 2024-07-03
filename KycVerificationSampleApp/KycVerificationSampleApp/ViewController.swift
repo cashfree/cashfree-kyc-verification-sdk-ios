@@ -10,9 +10,6 @@ import KycVerificationSdk
 
 class ViewController: UIViewController,VerificationResponseDelegate {
     
-    func onVerificationCompletion(msg: String) {
-        print("response \(msg)")
-    }
     
     
     override func viewDidLoad() {
@@ -22,14 +19,30 @@ class ViewController: UIViewController,VerificationResponseDelegate {
     
     @IBAction func onVerifyPressed(_ sender: UIButton) {
         do{
-            let session = try CFKycVerificationSession.Builder().setFormUrl("https://forms.cashfree.com/verification/B5osgk2bver0").build()
+            
+            let url = "https://forms.cashfree.com/verification/B5osgk2bver0"
+            let session = try CFKycVerificationSession.Builder().setFormUrl(url).build()
             let kycService = CFKycVerificationService.getInstance()
             try kycService.doVerification(session, self, self)
         }catch let e{
+            
             let error = e as! KycVerificationError
+            print(error)
+            
         }
         
     }
+    
+    func onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse) {
+        print(verificationResponse.form_id )
+        print(verificationResponse.status)
+    }
+    
+    func onErrorResponse(errorReponse: KycVerificationSdk.CFErrorResponse) {
+        print(errorReponse.message)
+        print(errorReponse.statusCode)
+    }
+    
     
 }
 

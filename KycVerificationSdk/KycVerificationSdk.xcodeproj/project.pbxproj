@@ -16,6 +16,8 @@
 		0008B15A2C298C5900FE7D5D /* KycVerificationSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 0008B14C2C298C5800FE7D5D /* KycVerificationSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		004D04CA2C2C5D89007A96C7 /* KycVerificationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D04C92C2C5D89007A96C7 /* KycVerificationError.swift */; };
 		004D04CC2C2C68BC007A96C7 /* CFKycVerificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D04CB2C2C68BC007A96C7 /* CFKycVerificationSession.swift */; };
+		0066E62F2C3554ED007C512D /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0066E62E2C3554ED007C512D /* JSONDecoderHelper.swift */; };
+		0066E6342C355571007C512D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0066E6332C355571007C512D /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,9 @@
 		0008B1582C298C5900FE7D5D /* KycVerificationSdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSdkTests.swift; sourceTree = "<group>"; };
 		004D04C92C2C5D89007A96C7 /* KycVerificationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationError.swift; sourceTree = "<group>"; };
 		004D04CB2C2C68BC007A96C7 /* CFKycVerificationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFKycVerificationSession.swift; sourceTree = "<group>"; };
+		0066E62B2C353D77007C512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0066E62E2C3554ED007C512D /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
+		0066E6332C355571007C512D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 		0008B13F2C298C5800FE7D5D = {
 			isa = PBXGroup;
 			children = (
+				0066E6302C35552B007C512D /* Model */,
 				0008B14B2C298C5800FE7D5D /* KycVerificationSdk */,
 				0008B1572C298C5900FE7D5D /* KycVerificationSdkTests */,
 				0008B14A2C298C5800FE7D5D /* Products */,
@@ -98,6 +104,8 @@
 		0008B14B2C298C5800FE7D5D /* KycVerificationSdk */ = {
 			isa = PBXGroup;
 			children = (
+				0066E6322C355557007C512D /* Models */,
+				0066E62B2C353D77007C512D /* Info.plist */,
 				004D04C82C2C5D74007A96C7 /* utils */,
 				004D04C52C2C4BE5007A96C7 /* builder */,
 				000724B72C2AA9A600F2D08F /* service */,
@@ -128,8 +136,24 @@
 			isa = PBXGroup;
 			children = (
 				004D04C92C2C5D89007A96C7 /* KycVerificationError.swift */,
+				0066E62E2C3554ED007C512D /* JSONDecoderHelper.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		0066E6302C35552B007C512D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0066E6322C355557007C512D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0066E6332C355571007C512D /* Models.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,11 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0066E62F2C3554ED007C512D /* JSONDecoderHelper.swift in Sources */,
 				0008B14E2C298C5800FE7D5D /* KycVerificationSdk.docc in Sources */,
 				004D04CC2C2C68BC007A96C7 /* CFKycVerificationSession.swift in Sources */,
 				000724B42C29CE2E00F2D08F /* CFKycVerificationViewController.swift in Sources */,
 				000724B92C2AAA4300F2D08F /* CFKycVerificationService.swift in Sources */,
 				004D04CA2C2C5D89007A96C7 /* KycVerificationError.swift in Sources */,
+				0066E6342C355571007C512D /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +432,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KycVerificationSdk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos for verification purposes.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to verify your geolocation for security purposes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos for verification purposes.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,8 +470,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KycVerificationSdk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos for verification purposes.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location to verify your geolocation for security purposes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to select photos for verification purposes.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
