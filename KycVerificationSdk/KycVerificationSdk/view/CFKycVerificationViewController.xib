@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CFKycVerificationViewController" customModule="KycVerificationSdk" customModuleProvider="target">
             <connections>
                 <outlet property="KycWebView" destination="x13-4N-TGQ" id="ONK-V1-5XX"/>
+                <outlet property="cancelButton" destination="pV0-83-bW7" id="3VK-7x-oym"/>
                 <outlet property="kycWebView" destination="x13-4N-TGQ" id="FQE-Nm-SMV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,28 +23,58 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x13-4N-TGQ">
-                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <rect key="frame" x="0.0" y="82.5" width="414" height="779.5"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oST-MM-9br">
+                    <rect key="frame" x="0.0" y="48" width="414" height="34.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV0-83-bW7">
+                            <rect key="frame" x="334" y="0.0" width="80" height="34.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="k9D-Vc-hHB"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="ctE-cZ-3pL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pV0-83-bW7" firstAttribute="top" secondItem="oST-MM-9br" secondAttribute="top" id="4CY-dC-7h9"/>
+                        <constraint firstAttribute="trailing" secondItem="pV0-83-bW7" secondAttribute="trailing" id="evN-Zn-bXF"/>
+                        <constraint firstAttribute="bottom" secondItem="pV0-83-bW7" secondAttribute="bottom" id="hCp-B9-Xcu"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x13-4N-TGQ" secondAttribute="trailing" id="9Kq-0n-x20"/>
-                <constraint firstItem="x13-4N-TGQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ns4-iv-Uy5"/>
-                <constraint firstItem="x13-4N-TGQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="diH-dY-w3W"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="x13-4N-TGQ" secondAttribute="bottom" id="kWF-WX-Ku9"/>
+                <constraint firstItem="x13-4N-TGQ" firstAttribute="top" secondItem="oST-MM-9br" secondAttribute="bottom" id="9a9-u5-G05"/>
+                <constraint firstAttribute="trailing" secondItem="oST-MM-9br" secondAttribute="trailing" id="VKv-Gn-v8o"/>
+                <constraint firstItem="oST-MM-9br" firstAttribute="trailing" secondItem="x13-4N-TGQ" secondAttribute="trailing" id="hcv-TT-zX5"/>
+                <constraint firstItem="oST-MM-9br" firstAttribute="leading" secondItem="x13-4N-TGQ" secondAttribute="leading" id="kc5-yB-wLf"/>
+                <constraint firstItem="oST-MM-9br" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mXl-Tu-Lsl"/>
+                <constraint firstItem="x13-4N-TGQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="n3d-GE-eGl"/>
+                <constraint firstItem="oST-MM-9br" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r8c-uS-b70"/>
             </constraints>
-            <point key="canvasLocation" x="233" y="33"/>
+            <point key="canvasLocation" x="231.8840579710145" y="32.8125"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

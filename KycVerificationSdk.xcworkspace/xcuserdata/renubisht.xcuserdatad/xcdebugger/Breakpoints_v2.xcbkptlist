@@ -14,8 +14,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "openWebView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "openWebView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "init?(coder:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "init(session:callBack:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "webView(_:didStartProvisionalNavigation:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -136,14 +136,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "849B895E-1A56-443D-8070-288A2761B7FF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "userContentController(_:didReceive:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,10 +158,72 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "userContentController(_:didReceive:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48F075F4-7FE0-49FD-BFA2-574E8A6D1F00 - d8fb346e819a3178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "437">
+               </Location>
+               <Location
+                  uuid = "48F075F4-7FE0-49FD-BFA2-574E8A6D1F00 - d8fb346e819a3178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "205">
+               </Location>
+               <Location
+                  uuid = "48F075F4-7FE0-49FD-BFA2-574E8A6D1F00 - d8fb346e819a3287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1173">
+               </Location>
+               <Location
+                  uuid = "48F075F4-7FE0-49FD-BFA2-574E8A6D1F00 - d8fb346e819a3287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "436">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -174,10 +236,42 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "onWebErrors(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91C42202-61F0-4A6D-B05A-9551EE5691C9 - 1eb20741057e3424"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.enableCancelButton(flag: Swift.Bool) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "177">
+               </Location>
+               <Location
+                  uuid = "91C42202-61F0-4A6D-B05A-9551EE5691C9 - b03c8d3fab81243d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.onWebErrors(KycVerificationSdk.WebResponse) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,26 +284,90 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "onWebErrors(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C39AE9B-83B9-4A41-9896-C063FC1D43CD - e4e145947fbda387"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in KycVerificationSdk.CFKycVerificationViewController.enableCancelButton(flag: Swift.Bool) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  uuid = "4C39AE9B-83B9-4A41-9896-C063FC1D43CD - b03c8d3fab8124d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.onWebErrors(KycVerificationSdk.WebResponse) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ED3403FD-02DE-4873-94BB-FF901152393D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "userContentController(_:didReceive:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ED3403FD-02DE-4873-94BB-FF901152393D - d8fb346e819a3287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "ED3403FD-02DE-4873-94BB-FF901152393D - d8fb346e819a3287"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1173">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -222,8 +380,228 @@
             filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "userContentController(_:didReceive:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "1173">
+               </Location>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "799">
+               </Location>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2826">
+               </Location>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2515">
+               </Location>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  uuid = "8F05013F-A1CB-49AE-9E33-3B22348FFDBF - d8fb346e819a32c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSdk.CFKycVerificationViewController.userContentController(_: __C.WKUserContentController, didReceive: __C.WKScriptMessage) -&gt; ()"
+                  moduleName = "KycVerificationSdk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C01C5942-D8B8-4786-AF3F-8215C61EEA31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82F5AC94-B90F-4016-8171-CC5E48B0AEE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "onVerificationCompletion(verificationResponse:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82F5AC94-B90F-4016-8171-CC5E48B0AEE2 - 161e0b67328e355f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSampleApp.ViewController.onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse) -&gt; ()"
+                  moduleName = "KycVerificationSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "386">
+               </Location>
+               <Location
+                  uuid = "82F5AC94-B90F-4016-8171-CC5E48B0AEE2 - 161e0b67328e355f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSampleApp.ViewController.onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse) -&gt; ()"
+                  moduleName = "KycVerificationSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5898D211-D82B-49B4-8233-E3CD53F743C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "onVerificationCompletion(verificationResponse:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5898D211-D82B-49B4-8233-E3CD53F743C7 - 161e0b67328e35d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSampleApp.ViewController.onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse) -&gt; ()"
+                  moduleName = "KycVerificationSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1049">
+               </Location>
+               <Location
+                  uuid = "5898D211-D82B-49B4-8233-E3CD53F743C7 - 161e0b67328e3511"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KycVerificationSampleApp.ViewController.onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse) -&gt; ()"
+                  moduleName = "KycVerificationSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renubisht/Documents/cashfree_sdk/cashfree-kyc-verification-sdk-ios/KycVerificationSampleApp/KycVerificationSampleApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "676">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9E538B1-CCAD-4F67-B1C8-A685F634EA17"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "userContentController(_:didReceive:)"
             landmarkType = "7">
          </BreakpointContent>
