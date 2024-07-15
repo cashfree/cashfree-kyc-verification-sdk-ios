@@ -21,8 +21,15 @@ final public class CFKycVerificationService : NSObject{
     
     @objc
     public func doVerification(_ session: CFKycVerificationSession,_ viewController: UIViewController,_ callback: VerificationResponseDelegate) throws{
+        
+        guard let navigationController = viewController.navigationController else {
+                    throw NSError(domain: "NavigationControllerNotFound", code: 1, userInfo: nil)
+                }
+        
         let vc = CFKycVerificationViewController(session: session, callBack: callback)
-        viewController.present(vc, animated: true, completion: nil)
+       // viewController.present(vc, animated: true, completion: nil)
+        
+        navigationController.pushViewController(vc, animated: true)
         
     }
     

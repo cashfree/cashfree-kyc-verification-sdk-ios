@@ -23,7 +23,7 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
     
     @IBOutlet weak var kycWebView: WKWebView!
     
-    @IBOutlet weak var cancelButton: UIButton!
+
     public init(session: CFKycVerificationSession, callBack: VerificationResponseDelegate){
         self.session = session
         self.responseDelegate = callBack
@@ -39,8 +39,9 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
         super.viewDidLoad()
         setupWebViewConfigurations()
         openWebView()
-        
-        
+        hideBackButton()
+        addSwipeGesture()
+        kycWebView.accessibilityIdentifier = "kycWebView"
     }
     
     private func setupWebViewConfigurations() {
@@ -60,6 +61,38 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
         kycWebView.navigationDelegate = self
     }
     
+    private func hideBackButton() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        }
+    
+    private func addSwipeGesture() {
+            let edgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleSwipeFromLeftEdge(_:)))
+            edgePanGestureRecognizer.edges = .left
+            view.addGestureRecognizer(edgePanGestureRecognizer)
+        }
+    
+    @objc internal func handleSwipeFromLeftEdge(_ gesture: UIScreenEdgePanGestureRecognizer) {
+           print("Swipe recognized")
+           if gesture.state == .recognized {
+               showCancellationAlert()
+           }
+       }
+       
+       private func showCancellationAlert() {
+           let alertController = UIAlertController(title: "Warning", message: "Are you sure you want to cancel the verification?", preferredStyle: .alert)
+           let yesAction = UIAlertAction(title: "Yes", style: .destructive) { [weak self] _ in
+               guard let self = self else { return }
+               self.navigationController?.popViewController(animated: true)
+               let errorResponse = CFErrorResponse()
+               errorResponse.message = "User cancelled Verification"
+               self.responseDelegate.onErrorResponse(errorReponse: errorResponse)
+           }
+           let noAction = UIAlertAction(title: "No", style: .default)
+           alertController.addAction(yesAction)
+           alertController.addAction(noAction)
+           self.present(alertController, animated: true)
+           print("Alert controller presented")
+       }
     
     func openWebView(){
         let request = URLRequest(url: URL(string:session.getFormUrl())!)
@@ -118,28 +151,6 @@ class CFKycVerificationViewController: UIViewController ,WKNavigationDelegate,WK
         self.dismiss(animated: true, completion: nil)
         
     }
-    
-    private func enableCancelButton(flag: Bool) {
-        DispatchQueue.main.async {
-            self.cancelButton.isEnabled = flag
-        }
-    }
-    
-    @IBAction func cancelButtonTapped(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Warning", message: "Are you sure you want to cancel the verification?", preferredStyle: .alert)
-        let yesAction = UIAlertAction(title: "Yes", style: .destructive) { [weak self] _ in
-            self?.dismiss(animated: true) {
-                self?.kycWebView.loadHTMLString("", baseURL: nil)
-                
-                let errorResponse = CFErrorResponse()
-                errorResponse.message = "User cancelled Verification"
-                self!.responseDelegate.onErrorResponse(errorReponse: errorResponse)
-            }
-        }
-        let noAction = UIAlertAction(title: "No", style: .default)
-        alertController.addAction(yesAction)
-        alertController.addAction(noAction)
-        self.present(alertController, animated: true)
-    }
+
     
 }

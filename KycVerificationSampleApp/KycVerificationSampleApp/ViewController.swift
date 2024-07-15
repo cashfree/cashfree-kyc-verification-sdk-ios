@@ -20,8 +20,8 @@ class ViewController: UIViewController,VerificationResponseDelegate {
     @IBAction func onVerifyPressed(_ sender: UIButton) {
         do{
             
-            //  let url = "https://forms.cashfree.com/verification/B5osgk2bver0"
-            let url = "http://192.168.100.152:3000/verification/123"
+             let url = "https://forms.cashfree.com/verification/B5osgk2bver0"
+            //let url = "http://192.168.100.152:3000/verification/123"
             let session = try CFKycVerificationSession.Builder().setFormUrl(url).build()
             let kycService = CFKycVerificationService.getInstance()
             try kycService.doVerification(session, self, self)

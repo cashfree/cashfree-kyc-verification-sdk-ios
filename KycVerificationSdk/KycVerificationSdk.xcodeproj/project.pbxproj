@@ -18,6 +18,13 @@
 		004D04CC2C2C68BC007A96C7 /* CFKycVerificationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004D04CB2C2C68BC007A96C7 /* CFKycVerificationSession.swift */; };
 		0066E62F2C3554ED007C512D /* JSONDecoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0066E62E2C3554ED007C512D /* JSONDecoderHelper.swift */; };
 		0066E6342C355571007C512D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0066E6332C355571007C512D /* Models.swift */; };
+		006FD7222C3FF35D00B722F4 /* KycVerificationSdkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FD7212C3FF35D00B722F4 /* KycVerificationSdkUITestsLaunchTests.swift */; };
+		006FD7282C3FF39E00B722F4 /* KycVerificationSdkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FD7272C3FF39E00B722F4 /* KycVerificationSdkUITests.swift */; };
+		006FD72B2C411A8600B722F4 /* CFKycVerificationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FD72A2C411A8600B722F4 /* CFKycVerificationViewControllerTests.swift */; };
+		00917A432C3F848700F16F25 /* KycVerificationErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00917A422C3F848700F16F25 /* KycVerificationErrorTests.swift */; };
+		00917A452C3F875200F16F25 /* DecodeJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00917A442C3F875200F16F25 /* DecodeJSONTests.swift */; };
+		00917A482C3F962300F16F25 /* CFKycVerificationSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00917A472C3F962300F16F25 /* CFKycVerificationSessionTests.swift */; };
+		00917A4B2C3F997B00F16F25 /* CFKycVerificationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00917A4A2C3F997B00F16F25 /* CFKycVerificationServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,14 @@
 		0066E62B2C353D77007C512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0066E62E2C3554ED007C512D /* JSONDecoderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderHelper.swift; sourceTree = "<group>"; };
 		0066E6332C355571007C512D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		006FD71D2C3FF35D00B722F4 /* KycVerificationSdkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KycVerificationSdkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006FD7212C3FF35D00B722F4 /* KycVerificationSdkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSdkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		006FD7272C3FF39E00B722F4 /* KycVerificationSdkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationSdkUITests.swift; sourceTree = "<group>"; };
+		006FD72A2C411A8600B722F4 /* CFKycVerificationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFKycVerificationViewControllerTests.swift; sourceTree = "<group>"; };
+		00917A422C3F848700F16F25 /* KycVerificationErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycVerificationErrorTests.swift; sourceTree = "<group>"; };
+		00917A442C3F875200F16F25 /* DecodeJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeJSONTests.swift; sourceTree = "<group>"; };
+		00917A472C3F962300F16F25 /* CFKycVerificationSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFKycVerificationSessionTests.swift; sourceTree = "<group>"; };
+		00917A4A2C3F997B00F16F25 /* CFKycVerificationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFKycVerificationServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0008B1542C298C5900FE7D5D /* KycVerificationSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006FD71A2C3FF35D00B722F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,7 @@
 				0066E6302C35552B007C512D /* Model */,
 				0008B14B2C298C5800FE7D5D /* KycVerificationSdk */,
 				0008B1572C298C5900FE7D5D /* KycVerificationSdkTests */,
+				006FD71E2C3FF35D00B722F4 /* KycVerificationSdkUITests */,
 				0008B14A2C298C5800FE7D5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +120,7 @@
 			children = (
 				0008B1492C298C5800FE7D5D /* KycVerificationSdk.framework */,
 				0008B1532C298C5900FE7D5D /* KycVerificationSdkTests.xctest */,
+				006FD71D2C3FF35D00B722F4 /* KycVerificationSdkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +143,10 @@
 		0008B1572C298C5900FE7D5D /* KycVerificationSdkTests */ = {
 			isa = PBXGroup;
 			children = (
+				006FD7292C411A6800B722F4 /* view */,
+				00917A492C3F996400F16F25 /* service */,
+				00917A462C3F960A00F16F25 /* builder */,
+				00917A412C3F845700F16F25 /* utils */,
 				0008B1582C298C5900FE7D5D /* KycVerificationSdkTests.swift */,
 			);
 			path = KycVerificationSdkTests;
@@ -154,6 +182,56 @@
 				0066E6332C355571007C512D /* Models.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		006FD71E2C3FF35D00B722F4 /* KycVerificationSdkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				006FD7262C3FF36C00B722F4 /* view */,
+				006FD7212C3FF35D00B722F4 /* KycVerificationSdkUITestsLaunchTests.swift */,
+			);
+			path = KycVerificationSdkUITests;
+			sourceTree = "<group>";
+		};
+		006FD7262C3FF36C00B722F4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				006FD7272C3FF39E00B722F4 /* KycVerificationSdkUITests.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		006FD7292C411A6800B722F4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				006FD72A2C411A8600B722F4 /* CFKycVerificationViewControllerTests.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		00917A412C3F845700F16F25 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				00917A422C3F848700F16F25 /* KycVerificationErrorTests.swift */,
+				00917A442C3F875200F16F25 /* DecodeJSONTests.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		00917A462C3F960A00F16F25 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				00917A472C3F962300F16F25 /* CFKycVerificationSessionTests.swift */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		00917A492C3F996400F16F25 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				00917A4A2C3F997B00F16F25 /* CFKycVerificationServiceTests.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +284,23 @@
 			productReference = 0008B1532C298C5900FE7D5D /* KycVerificationSdkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		006FD71C2C3FF35D00B722F4 /* KycVerificationSdkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006FD7232C3FF35D00B722F4 /* Build configuration list for PBXNativeTarget "KycVerificationSdkUITests" */;
+			buildPhases = (
+				006FD7192C3FF35D00B722F4 /* Sources */,
+				006FD71A2C3FF35D00B722F4 /* Frameworks */,
+				006FD71B2C3FF35D00B722F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KycVerificationSdkUITests;
+			productName = KycVerificationSdkUITests;
+			productReference = 006FD71D2C3FF35D00B722F4 /* KycVerificationSdkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +315,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					0008B1522C298C5900FE7D5D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					006FD71C2C3FF35D00B722F4 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -239,6 +337,7 @@
 			targets = (
 				0008B1482C298C5800FE7D5D /* KycVerificationSdk */,
 				0008B1522C298C5900FE7D5D /* KycVerificationSdkTests */,
+				006FD71C2C3FF35D00B722F4 /* KycVerificationSdkUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +352,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0008B1512C298C5900FE7D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006FD71B2C3FF35D00B722F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +386,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00917A482C3F962300F16F25 /* CFKycVerificationSessionTests.swift in Sources */,
+				00917A4B2C3F997B00F16F25 /* CFKycVerificationServiceTests.swift in Sources */,
 				0008B1592C298C5900FE7D5D /* KycVerificationSdkTests.swift in Sources */,
+				00917A452C3F875200F16F25 /* DecodeJSONTests.swift in Sources */,
+				006FD72B2C411A8600B722F4 /* CFKycVerificationViewControllerTests.swift in Sources */,
+				00917A432C3F848700F16F25 /* KycVerificationErrorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006FD7192C3FF35D00B722F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006FD7222C3FF35D00B722F4 /* KycVerificationSdkUITestsLaunchTests.swift in Sources */,
+				006FD7282C3FF39E00B722F4 /* KycVerificationSdkUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +650,38 @@
 			};
 			name = Release;
 		};
+		006FD7242C3FF35D00B722F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSdkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		006FD7252C3FF35D00B722F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z7NNK3X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashfree.KycVerificationSdkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,6 +708,15 @@
 			buildConfigurations = (
 				0008B1612C298C5900FE7D5D /* Debug */,
 				0008B1622C298C5900FE7D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		006FD7232C3FF35D00B722F4 /* Build configuration list for PBXNativeTarget "KycVerificationSdkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006FD7242C3FF35D00B722F4 /* Debug */,
+				006FD7252C3FF35D00B722F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
