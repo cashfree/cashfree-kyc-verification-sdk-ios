@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/Release-iphoneos/KycVerificationSdk.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/Release-iphoneos/KycVerificationSdk.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "KycVerificationSdk-Swift.h",
+      'external-contents': "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/unextended-interface-header.h",
+    }]
+    }]
+}

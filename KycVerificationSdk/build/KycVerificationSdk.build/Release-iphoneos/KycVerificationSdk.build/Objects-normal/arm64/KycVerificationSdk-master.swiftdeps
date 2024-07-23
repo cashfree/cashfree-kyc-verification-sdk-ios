@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)"
+options: "495dc1fdb1e5ca788ccaad424266f35cbea6dab339a524897cccc23620218795"
+build_start_time: [1721734674, 51612000]
+build_end_time: [1721734684, 425400000]
+inputs:
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/Models/Models.swift"
+  : [1720079097, 13991033]
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/builder/CFKycVerificationSession.swift"
+  : [1719832876, 526330751]
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/service/CFKycVerificationService.swift"
+  : [1720463267, 627263704]
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/utils/JSONDecoderHelper.swift"
+  : [1719999868, 911620638]
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/utils/KycVerificationError.swift"
+  : [1719832876, 526986825]
+  ? "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift"
+  : [1720775150, 120990281]

@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master.swiftconstvalues",
+    "dependencies" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master.d",
+    "diagnostics" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master.dia",
+    "emit-module-dependencies" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master-emit-module.dia",
+    "swift-dependencies" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationSdk-master.swiftdeps"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/builder/CFKycVerificationSession.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationSession.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationSession.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationSession.o"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/Models/Models.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/Models.o"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/service/CFKycVerificationService.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationService.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationService.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationService.o"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/utils/JSONDecoderHelper.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/JSONDecoderHelper.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/JSONDecoderHelper.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/JSONDecoderHelper.o"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/utils/KycVerificationError.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationError.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationError.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/KycVerificationError.o"
+  },
+  "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/KycVerificationSdk/view/CFKycVerificationViewController.swift" : {
+    "index-unit-output-path" : "/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationViewController.o",
+    "llvm-bc" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationViewController.bc",
+    "object" : "/Users/renubisht/Documents/cashfree_sdk/New Folder With Items/cashfree-kyc-verification-sdk-ios/KycVerificationSdk/build/KycVerificationSdk.build/Release-iphoneos/KycVerificationSdk.build/Objects-normal/arm64/CFKycVerificationViewController.o"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_$s18KycVerificationSdk15CFErrorResponseCMu",
+            "_$s18KycVerificationSdk0aB5ErrorOs23CustomStringConvertibleAAMc",
+            "_$s18KycVerificationSdk05CFKycB7ServiceCN",
+            "_$s18KycVerificationSdk0aB5ErrorOSYAAMc",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCMo",
+            "_$s18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvg",
+            "_$s18KycVerificationSdk0aB5ErrorOs0D0AAMc",
+            "_$s18KycVerificationSdk05CFKycB7ServiceCMo",
+            "_$s18KycVerificationSdk15CFErrorResponseCN",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvMTq",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvMTq",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvsTq",
+            "_$s18KycVerificationSdk22CFVerificationResponseCMu",
+            "_$s18KycVerificationSdk05CFKycB7ServiceCfD",
+            "_$s18KycVerificationSdk05CFKycB7SessionCfD",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvgTq",
+            "_$s18KycVerificationSdk22CFVerificationResponseCN",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvgTq",
+            "_$s18KycVerificationSdk0aB5ErrorO8rawValueSivpMV",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvsTj",
+            "_$s18KycVerificationSdk22CFVerificationResponseCACycfc",
+            "_$s18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvpMV",
+            "_$s18KycVerificationSdk05CFKycB7SessionCMn",
+            "_$s18KycVerificationSdk0aB5ErrorO8rawValueSivg",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvsTq",
+            "_$s18KycVerificationSdk0aB5ErrorOMa",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvgTq",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvMTj",
+            "_$s18KycVerificationSdk05CFKycB7SessionCN",
+            "_$s18KycVerificationSdk15CFErrorResponseCMa",
+            "_$s18KycVerificationSdk0aB5ErrorOSQAAMc",
+            "_$s18KycVerificationSdk15CFErrorResponseCACycfc",
+            "_$s18KycVerificationSdk15CFErrorResponseCMo",
+            "_$s18KycVerificationSdk0aB5ErrorO11descriptionSSvpMV",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvgTj",
+            "_$s18KycVerificationSdk22CFVerificationResponseCMa",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCAEycfC",
+            "_$s18KycVerificationSdk0aB5ErrorO03_nsD6DomainSSvgZ",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvpMV",
+            "_$s18KycVerificationSdk05CFKycB7SessionCACycfc",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvpMV",
+            "_$s18KycVerificationSdk0aB5ErrorON",
+            "_$s18KycVerificationSdk15CFErrorResponseCACycfC",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvgTj",
+            "_$s18KycVerificationSdk0aB5ErrorO10Foundation15_BridgedNSErrorAAMc",
+            "_KycVerificationSdkVersionString",
+            "_$s18KycVerificationSdk0aB5ErrorO8rawValueACSgSi_tcfC",
+            "_$s18KycVerificationSdk05CFKycB7SessionCACycfC",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvgTq",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvsTq",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvsTj",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvMTj",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvsTj",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvsTq",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvsTj",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderC5buildACyKF",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCMa",
+            "_$s18KycVerificationSdk05CFKycB7ServiceCMn",
+            "_$s18KycVerificationSdk22CFVerificationResponseCMn",
+            "_$s18KycVerificationSdk22CFVerificationResponseCfD",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCAEycfc",
+            "_$s18KycVerificationSdk05CFKycB7ServiceC11getInstanceACyFZ",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCN",
+            "_$s18KycVerificationSdk05CFKycB7ServiceCMa",
+            "_$s18KycVerificationSdk05CFKycB7SessionCMa",
+            "_$s18KycVerificationSdk15CFErrorResponseCMn",
+            "_$s18KycVerificationSdk05CFKycB7SessionCMo",
+            "_KycVerificationSdkVersionNumber",
+            "_$s18KycVerificationSdk22CFVerificationResponseCACycfC",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvpMV",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvMTj",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCMn",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvMTq",
+            "_$s18KycVerificationSdk0aB5ErrorOSHAAMc",
+            "_$s18KycVerificationSdk0aB5ErrorOMn",
+            "_$s18KycVerificationSdk22CFVerificationResponseC6statusSSSgvgTj",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderC10setFormUrlyAESSF",
+            "_$s18KycVerificationSdk22CFVerificationResponseCMo",
+            "_$s18KycVerificationSdk0aB5ErrorO10Foundation021_ObjectiveCBridgeableD0AAMc",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvMTq",
+            "_$s18KycVerificationSdk0aB5ErrorO11descriptionSSvg",
+            "_$s18KycVerificationSdk05CFKycB7SessionC7BuilderCfD",
+            "_$s18KycVerificationSdk15CFErrorResponseC10statusCodeSiSgvpMV",
+            "_$s18KycVerificationSdk05CFKycB7ServiceC02doB0yyAA0dB7SessionC_So16UIViewControllerCAA0B16ResponseDelegate_ptKF",
+            "_$s18KycVerificationSdk15CFErrorResponseC7messageSSSgvgTj",
+            "_$s18KycVerificationSdk05CFKycB7SessionC10getFormUrlSSyF",
+            "_$s18KycVerificationSdk05CFKycB7SessionCMu",
+            "_$s18KycVerificationSdk22CFVerificationResponseC7form_idSSSgvMTj",
+            "_$s18KycVerificationSdk15CFErrorResponseCfD"
+          ],
+          "objc_class": [
+            "_TtC18KycVerificationSdk24CFKycVerificationSession",
+            "_TtC18KycVerificationSdk15CFErrorResponse",
+            "_TtCC18KycVerificationSdk24CFKycVerificationSession7Builder",
+            "_TtC18KycVerificationSdk22CFVerificationResponse",
+            "_TtC18KycVerificationSdk24CFKycVerificationService"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "@rpath/KycVerificationSdk.framework/KycVerificationSdk"
+      }
+    ],
+    "swift_abi": [
+      {
+        "abi": 7
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "16.4",
+        "target": "arm64-ios"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}
