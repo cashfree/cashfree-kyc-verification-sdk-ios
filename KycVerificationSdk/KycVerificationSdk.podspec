@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name         = "CashfreeKycVerificationSdk"
-  s.version      = "1.0.0"
+  s.name         = "KycVerificationSdk"
+  s.version      = "1.0.1"
   s.summary      = "Cocoapods implementation of Cashfree Kyc Verification SDK"
   
   s.description  = <<-DESC

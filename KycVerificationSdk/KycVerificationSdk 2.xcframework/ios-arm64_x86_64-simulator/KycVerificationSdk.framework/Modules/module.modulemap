@@ -1,0 +1,11 @@
+framework module KycVerificationSdk {
+  umbrella header "KycVerificationSdk.h"
+  export *
+
+  module * { export * }
+}
+
+module KycVerificationSdk.Swift {
+  header "KycVerificationSdk-Swift.h"
+  requires objc
+}
