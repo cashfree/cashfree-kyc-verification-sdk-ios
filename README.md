@@ -59,10 +59,8 @@ This guide will walk you through integrating the Cashfree KYC SDK into your iOS 
 Add the following to your `Podfile`:
 
 ```ruby
-target 'YourApp' do
-  use_frameworks!
-  pod 'CFSDK', '~> 2.1'
-end
+pod 'KycVerificationSdk', '~> 1.0.1'
+
 ```
 
 Then run:
@@ -71,68 +69,66 @@ Then run:
 pod install
 ```
 
-### Manual Installation
-
-1. Download the latest Cashfree iOS SDK from [GitHub](https://github.com/cashfree/ios-CFWebSDK).
-2. Unzip `CFSDK.xcframework.zip` and add the `CFSDK.xcframework` to your Xcode project.
-3. Ensure `ENABLE_BITCODE` is set to `YES` in your project's build settings.
-
 ---
 
 ## Usage and Documentation
 
+
 ### Initialization
 
-Import the SDK in your view controller:
+To initialise and use the iOS native SDK:
+
+1. Create an instance of the `CFVerificationService` class:
 
 ```swift
-import CFSDK
+let kycService = CFVerificationService.getInstance()
 ```
 
-Initialize the SDK with your `appId` and environment:
+2. Set up callback handlers by implementing the `CFResponseDelegate` protocol:
 
 ```swift
-let paymentService = CFPaymentService()
-```
-
-### KYC Verification Flow
-
-1. Generate a `cftoken` from your server using the order details.
-2. Create a dictionary with the required parameters:
-
-```swift
-let params: [String: Any] = [
-    "appId": "<YOUR_APP_ID>",
-    "orderId": "<ORDER_ID>",
-    "orderAmount": "1.00",
-    "orderCurrency": "INR",
-    "orderNote": "Test Order",
-    "customerName": "John Doe",
-    "customerPhone": "9999999999",
-    "customerEmail": "john.doe@example.com",
-    "notifyUrl": "https://yourdomain.com/notify",
-    "tokenData": "<CFTOKEN>"
-]
-```
-
-3. Start the payment process:
-
-```swift
-paymentService.doWebCheckoutPayment(
-    params: params,
-    env: "TEST",
-    callback: self
-)
-```
-
-4. Implement the `ResultDelegate` to handle the response:
-
-```swift
-extension YourViewController: ResultDelegate {
-    func onPaymentCompletion(msg: String) {
-        print("Payment Result: \(msg)")
-        // Handle the result here
+extension ViewController: CFResponseDelegate {
+    func onVerification(_ verificationResponse: KycVerificationSdk.CF1ClickOnboardingResponse) {
+        showErrorAlert(title: "Verification Success", message: verificationResponse.verificationId ?? "N/A")
     }
+
+    func onVerificationError(_ errorResponse: KycVerificationSdk.CF1ClickOnboardingErrorResponse) {
+        showErrorAlert(title: "Verification Error", message: errorResponse.status ?? "N/A")
+    }
+
+    func onUserDrop(_ userDropResponse: KycVerificationSdk.CFUserDropResponse) {
+        showErrorAlert(title: "User Dropped", message: userDropResponse.verificationId ?? "N/A")
+    }
+}
+```
+
+3. Initiate the 1-Click Onboarding SDK:
+
+```swift
+do {
+    let environment = Environment.PROD // or Environment.TEST
+    try kycService.open1ClickOnboarding(sessionId, environment, self, self)
+} catch let e {
+    let error = e as! VerificationError
+    print(error)
+}
+```
+
+**Parameters**:
+- `sessionId`: A unique identifier for the session.
+- `environment`: Specifies the environment. Values: `Environment.TEST` or `Environment.PROD`
+
+---
+
+## Callback Structure
+
+Example response from the SDK:
+
+```json
+{
+  "verification_id": "verification_id_value",
+  "auth_code": "auth_code_value",
+  "status": "SUCCESS"
 }
 ```
 
@@ -155,7 +151,7 @@ Ensure the following keys are added to your `Info.plist` with appropriate descri
 
 ## Error Handling
 
-Handle errors in the `onPaymentCompletion` method by parsing the `msg` string, which contains the transaction status and message. Always verify the transaction status and take appropriate actions in your app.
+Use the delegate methods to handle success, error, and user drop events as shown above.
 
 ---
 
