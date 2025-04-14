@@ -1,4 +1,4 @@
-# Cashfree KYC Verification Android SDK
+# Cashfree KYC Verification iOS SDK
 
 ![Build](https://badgen.net/badge/build/success/blue?icon=github)
 ![Version](https://badgen.net/badge/version/1.0.0/blue?icon=github)
@@ -8,14 +8,14 @@
 
 ## **Description**
 
-The Cashfree KYC Verification Android SDK enables seamless 1-Click onboarding and KYC verification for Android applications. It allows businesses to quickly verify user identity via a secure and optimized process, reducing drop-offs and ensuring compliance with regulatory standards.
+The Cashfree KYC Verification iOS SDK enables seamless 1-Click onboarding and KYC verification for iOS applications. It allows businesses to quickly verify user identity via a secure and optimized process, reducing drop-offs and ensuring compliance with regulatory standards.
 
 This SDK simplifies the KYC process, allowing you to:
 - Trigger verification flows directly within your app.
 - Handle permission requests, verification stages, and result callbacks.
 - Improve user onboarding experience by reducing manual input and navigation.
 
-👉 For complete integration details, check our [Official Documentation](https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#android-native).
+👉 For complete integration details, check our [Official Documentation](https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#ios-native).
 
 ---
 
@@ -36,41 +36,46 @@ This SDK simplifies the KYC process, allowing you to:
 
 ## Getting Started
 
-This guide will walk you through integrating the Cashfree KYC SDK into your Android application and triggering the KYC verification process with minimal effort.
+This guide will walk you through integrating the Cashfree KYC SDK into your iOS application and triggering the KYC verification process with minimal effort.
 
 ---
 
 ## Dependencies
 
-- Android Studio Bumblebee or higher
-- `minSdkVersion` 21
-- Kotlin 1.6+ or Java 8+
+- Xcode 13.3 or higher
+- Swift 5.0+
+- iOS 10.0 or later
 - Required permissions:
-  - `CAMERA`
-  - `RECORD_AUDIO`
-  - `ACCESS_FINE_LOCATION`
-  - `READ_CALENDAR` *(only if adding calendar events is needed)*
+  - `NSCameraUsageDescription`
+  - `NSMicrophoneUsageDescription`
+  - `NSLocationWhenInUseUsageDescription`
 
 ---
 
 ## Installation
 
-Add the SDK dependency to your `build.gradle` file:
+### Using CocoaPods
 
-```groovy
-implementation 'com.cashfree.kyc:sdk:<latest-version>'
+Add the following to your `Podfile`:
+
+```ruby
+target 'YourApp' do
+  use_frameworks!
+  pod 'CFSDK', '~> 2.1'
+end
 ```
 
-Ensure `mavenCentral()` is added in your project-level `build.gradle`:
+Then run:
 
-```groovy
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+```bash
+pod install
 ```
+
+### Manual Installation
+
+1. Download the latest Cashfree iOS SDK from [GitHub](https://github.com/cashfree/ios-CFWebSDK).
+2. Unzip `CFSDK.xcframework.zip` and add the `CFSDK.xcframework` to your Xcode project.
+3. Ensure `ENABLE_BITCODE` is set to `YES` in your project's build settings.
 
 ---
 
@@ -78,73 +83,85 @@ allprojects {
 
 ### Initialization
 
-Before using the SDK, initialize it using the following:
+Import the SDK in your view controller:
 
-```kotlin
-CashfreeKycSdk.initialize(
-    context = this,
-    clientId = "<YOUR_CLIENT_ID>",
-    environment = Environment.PRODUCTION // or Environment.SANDBOX
-)
+```swift
+import CFSDK
+```
+
+Initialize the SDK with your `appId` and environment:
+
+```swift
+let paymentService = CFPaymentService()
 ```
 
 ### KYC Verification Flow
 
-Trigger the KYC process with the access token provided by your backend:
+1. Generate a `cftoken` from your server using the order details.
+2. Create a dictionary with the required parameters:
 
-```kotlin
-CashfreeKycSdk.startKycVerification(
-    activity = this,
-    token = "<ACCESS_TOKEN>",
-    callback = object : CashfreeKycCallback {
-        override fun onSuccess(result: VerificationResult) {
-            // Handle success scenario
-        }
+```swift
+let params: [String: Any] = [
+    "appId": "<YOUR_APP_ID>",
+    "orderId": "<ORDER_ID>",
+    "orderAmount": "1.00",
+    "orderCurrency": "INR",
+    "orderNote": "Test Order",
+    "customerName": "John Doe",
+    "customerPhone": "9999999999",
+    "customerEmail": "john.doe@example.com",
+    "notifyUrl": "https://yourdomain.com/notify",
+    "tokenData": "<CFTOKEN>"
+]
+```
 
-        override fun onFailure(error: KycError) {
-            // Handle failure scenario
-            Log.e("KYC", "Verification failed: ${error.message}")
-        }
-    }
+3. Start the payment process:
+
+```swift
+paymentService.doWebCheckoutPayment(
+    params: params,
+    env: "TEST",
+    callback: self
 )
 ```
 
-For more platform-specific usage (iOS/Android), refer to the [official integration docs]([https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#ios-native](https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#android-native)).
+4. Implement the `ResultDelegate` to handle the response:
+
+```swift
+extension YourViewController: ResultDelegate {
+    func onPaymentCompletion(msg: String) {
+        print("Payment Result: \(msg)")
+        // Handle the result here
+    }
+}
+```
 
 ---
 
 ## Configuration
 
-Add required permissions in your `AndroidManifest.xml`:
+Ensure the following keys are added to your `Info.plist` with appropriate descriptions:
 
 ```xml
-<uses-permission android:name="android.permission.CAMERA"/>
-<uses-permission android:name="android.permission.RECORD_AUDIO"/>
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<uses-permission android:name="android.permission.READ_CALENDAR"/>
+<key>NSCameraUsageDescription</key>
+<string>We require camera access for KYC verification.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>We require microphone access for KYC verification.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>We require location access for KYC verification.</string>
 ```
-
-Also ensure runtime permission handling is done at the app level before triggering the verification flow.
 
 ---
 
 ## Error Handling
 
-The SDK will return detailed error messages via the `onFailure` callback.
-
-```kotlin
-override fun onFailure(error: KycError) {
-    Log.e("KYC", "Verification failed: ${error.code} - ${error.message}")
-}
-```
-
-Implement proper UI feedback to guide the user on retry options or permission issues.
+Handle errors in the `onPaymentCompletion` method by parsing the `msg` string, which contains the transaction status and message. Always verify the transaction status and take appropriate actions in your app.
 
 ---
 
 ## Getting Help
 
-If you have questions, concerns, or bug reports, you can reach out through the following channels:
+If you encounter issues or have questions:
 
 1. File an issue via this repository's **Issues** section.
 2. Email us at [care@cashfree.com](mailto:care@cashfree.com)
@@ -154,6 +171,6 @@ If you have questions, concerns, or bug reports, you can reach out through the f
 ## Open Source Licensing and Other Info
 
 - [TERMS](TERMS.md)
-- [LICENSE](https://github.com/cashfree/nextgen-android/blob/master/LICENSE.md)
-- [CODE OF CONDUCT](https://github.com/cashfree/nextgen-android/blob/master/CODE_OF_CONDUCT.md)
-- [SECURITY POLICY](https://github.com/cashfree/nextgen-android/blob/master/SECURITY.md)
+- [LICENSE](https://github.com/cashfree/ios-CFWebSDK/blob/master/LICENSE.md)
+- [CODE OF CONDUCT](https://github.com/cashfree/ios-CFWebSDK/blob/master/CODE_OF_CONDUCT.md)
+- [SECURITY POLICY](https://github.com/cashfree/ios-CFWebSDK/blob/master/SECURITY.md)
