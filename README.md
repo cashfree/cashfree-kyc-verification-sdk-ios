@@ -1,4 +1,4 @@
-# Cashfree KYC Verification iOS SDK
+# Cashfree KYC Verification Android SDK
 
 ![Build](https://badgen.net/badge/build/success/blue?icon=github)
 ![Version](https://badgen.net/badge/version/1.0.0/blue?icon=github)
@@ -8,14 +8,14 @@
 
 ## **Description**
 
-The Cashfree KYC Verification iOS SDK enables seamless 1-Click onboarding and KYC verification for iOS applications. It allows businesses to quickly verify user identity via a secure and optimized process, reducing drop-offs and ensuring compliance with regulatory standards.
+The Cashfree KYC Verification Android SDK enables seamless 1-Click onboarding and KYC verification for Android applications. It allows businesses to quickly verify user identity via a secure and optimized process, reducing drop-offs and ensuring compliance with regulatory standards.
 
 This SDK simplifies the KYC process, allowing you to:
 - Trigger verification flows directly within your app.
 - Handle permission requests, verification stages, and result callbacks.
 - Improve user onboarding experience by reducing manual input and navigation.
 
-👉 For complete integration details, check our [Official Documentation](https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#ios-native).
+👉 For complete integration details, check our [Official Documentation](https://www.cashfree.com/docs/api-reference/vrs/v2/1-click-onboarding/1-click-onboarding-sdk#android-native).
 
 ---
 
@@ -36,128 +36,121 @@ This SDK simplifies the KYC process, allowing you to:
 
 ## Getting Started
 
-This guide will walk you through integrating the Cashfree KYC SDK into your iOS application and triggering the KYC verification process with minimal effort.
+This guide will walk you through integrating the Cashfree KYC SDK into your Android application and triggering the KYC verification process with minimal effort.
 
 ---
 
 ## Dependencies
 
-- Xcode 13.3 or higher
-- Swift 5.0+
-- iOS 10.0 or later
+- Android Studio Bumblebee or higher
+- `minSdkVersion` 21
+- Kotlin 1.6+ or Java 8+
 - Required permissions:
-  - `NSCameraUsageDescription`
-  - `NSMicrophoneUsageDescription`
-  - `NSLocationWhenInUseUsageDescription`
+  - `CAMERA`
+  - `RECORD_AUDIO`
+  - `ACCESS_FINE_LOCATION`
+  - `READ_CALENDAR` *(only if adding calendar events is needed)*
 
 ---
 
 ## Installation
 
-### Using CocoaPods
+### Step 1: Add Maven repository
 
-Add the following to your `Podfile`:
+In `settings.gradle.kts`:
 
-```ruby
-pod 'KycVerificationSdk', '~> 1.0.1'
-
+```kotlin
+repositories {
+    google()
+    mavenCentral()
+    maven { url = URI("https://maven.cashfree.com/release") }
+}
 ```
 
-Then run:
+### Step 2: Add SDK dependency
 
-```bash
-pod install
+In `build.gradle.kts`:
+
+```kotlin
+dependencies {
+    implementation("com.cashfree.vrs:kyc-verification:1.0.0")
+}
 ```
+
+Click **Sync Now** in Android Studio to sync the project.
 
 ---
 
 ## Usage and Documentation
 
-
 ### Initialization
 
-To initialise and use the iOS native SDK:
+Create an instance of the verification service:
 
-1. Create an instance of the `CFVerificationService` class:
-
-```swift
-let kycService = CFVerificationService.getInstance()
+```kotlin
+val verificationService = CFVerificationService.Builder()
+    .setContext(this) // Pass the context
+    .build()
 ```
 
-2. Set up callback handlers by implementing the `CFResponseDelegate` protocol:
+### Callback Configuration
 
-```swift
-extension ViewController: CFResponseDelegate {
-    func onVerification(_ verificationResponse: KycVerificationSdk.CF1ClickOnboardingResponse) {
-        showErrorAlert(title: "Verification Success", message: verificationResponse.verificationId ?? "N/A")
+Configure the callback to handle responses:
+
+```kotlin
+verificationService.set1ClickOnboardingCallback(object : CF1ClickOnboardingCallback {
+    override fun onVerification(response: CF1ClickOnboardingResponse) {
+        // Handle success
     }
 
-    func onVerificationError(_ errorResponse: KycVerificationSdk.CF1ClickOnboardingErrorResponse) {
-        showErrorAlert(title: "Verification Error", message: errorResponse.status ?? "N/A")
+    override fun onVerificationError(error: CF1ClickOnboardingErrorResponse) {
+        // Handle error
     }
 
-    func onUserDrop(_ userDropResponse: KycVerificationSdk.CFUserDropResponse) {
-        showErrorAlert(title: "User Dropped", message: userDropResponse.verificationId ?? "N/A")
+    override fun onUserDrop(error: CFUserDropResponse) {
+        // Handle user drop
     }
-}
+})
 ```
 
-3. Initiate the 1-Click Onboarding SDK:
+### Launching Verification
 
-```swift
-do {
-    let environment = Environment.PROD // or Environment.TEST
-    try kycService.open1ClickOnboarding(sessionId, environment, self, self)
-} catch let e {
-    let error = e as! VerificationError
-    print(error)
-}
+Initiate the 1-Click Onboarding SDK:
+
+```kotlin
+verificationService.open1ClickOnboarding(sessionId, Environment.TEST)
 ```
 
 **Parameters**:
-- `sessionId`: A unique identifier for the session.
-- `environment`: Specifies the environment. Values: `Environment.TEST` or `Environment.PROD`
-
----
-
-## Callback Structure
-
-Example response from the SDK:
-
-```json
-{
-  "verification_id": "verification_id_value",
-  "auth_code": "auth_code_value",
-  "status": "SUCCESS"
-}
-```
+- `sessionId`: Unique session identifier
+- `Environment`: `Environment.TEST` or `Environment.PROD`
 
 ---
 
 ## Configuration
 
-Ensure the following keys are added to your `Info.plist` with appropriate descriptions:
+Add required permissions in your `AndroidManifest.xml`:
 
 ```xml
-<key>NSCameraUsageDescription</key>
-<string>We require camera access for KYC verification.</string>
-<key>NSMicrophoneUsageDescription</key>
-<string>We require microphone access for KYC verification.</string>
-<key>NSLocationWhenInUseUsageDescription</key>
-<string>We require location access for KYC verification.</string>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.READ_CALENDAR"/>
 ```
+
+Make sure to request runtime permissions before starting the verification process.
 
 ---
 
 ## Error Handling
 
-Use the delegate methods to handle success, error, and user drop events as shown above.
+Errors can be handled through the `onVerificationError` and `onUserDrop` callbacks. Always provide user feedback or retry options for a smooth UX.
 
 ---
 
 ## Getting Help
 
-If you encounter issues or have questions:
+If you have questions, concerns, or bug reports, you can reach out through the following channels:
 
 1. File an issue via this repository's **Issues** section.
 2. Email us at [care@cashfree.com](mailto:care@cashfree.com)
@@ -167,6 +160,6 @@ If you encounter issues or have questions:
 ## Open Source Licensing and Other Info
 
 - [TERMS](TERMS.md)
-- [LICENSE](https://github.com/cashfree/ios-CFWebSDK/blob/master/LICENSE.md)
-- [CODE OF CONDUCT](https://github.com/cashfree/ios-CFWebSDK/blob/master/CODE_OF_CONDUCT.md)
-- [SECURITY POLICY](https://github.com/cashfree/ios-CFWebSDK/blob/master/SECURITY.md)
+- [LICENSE](https://github.com/cashfree/nextgen-android/blob/master/LICENSE.md)
+- [CODE OF CONDUCT](https://github.com/cashfree/nextgen-android/blob/master/CODE_OF_CONDUCT.md)
+- [SECURITY POLICY](https://github.com/cashfree/nextgen-android/blob/master/SECURITY.md)
