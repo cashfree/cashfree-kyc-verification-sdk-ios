@@ -6,11 +6,11 @@
 	<dict>
 		<key>CFKycVerificationViewController.nib</key>
 		<data>
-		GLm56g0pWkxk+XysL2WaI7xZmtE=
+		O0r1VH96X6U9iM2vPCYa5Ny/3CE=
 		</data>
 		<key>Headers/KycVerificationSdk-Swift.h</key>
 		<data>
-		ULL3QTNwdN7uE4p4YmhXRhCyISM=
+		BHh1ibEvP08zF71N0PbY7aEtOyo=
 		</data>
 		<key>Headers/KycVerificationSdk.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EafEzDrMEKRMs4jwBjsZsVX8WHs=
+		hUizeyBJVQLJr1PQBr0x+EALQ8Y=
 		</data>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kI9pwfZWKixZovw6LmAvtAl8Wx4=
+		ifCz8NsVpzMtD5gAMDv64d41St0=
 		</data>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tfBUpP7d+FpsdSq3Ke0tOJrA18w=
+		Ovp0AuvecNMbsVuuNlAZGSUgzZw=
 		</data>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lWgTrt/auoHCw4bB6lZgi/t942U=
+		+H1SwB3m8qPb4ffmvjzyllVsIkA=
 		</data>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tfBUpP7d+FpsdSq3Ke0tOJrA18w=
+		Ovp0AuvecNMbsVuuNlAZGSUgzZw=
 		</data>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vLnfUgTvLC0qgpHg/l6ka9/tBW4=
+		lMRZVDF7x05BQMDhrQKnRJFY5fc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,14 +51,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8TxVP+YKgdkPZ/AggKYJfBsaJs6beaeBiysWczppCyg=
+			zrLQ7lAWVC+8eblOsfqTTaJy62NwJDxUwOenisGlDbU=
 			</data>
 		</dict>
 		<key>Headers/KycVerificationSdk-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eMyHGNr47wLpRWHJ5THd6tpDQiLqUkVmvCaD1J2U4Pg=
+			BvBBkMKFp0AYPBU34noYhNtctA5Vo4uF1CseFcOxCQg=
 			</data>
 		</dict>
 		<key>Headers/KycVerificationSdk.h</key>
@@ -72,35 +72,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ocrbSqD7+AkqYB/8GWl5pWM3HtrLDMajChDsdP1FNwo=
+			/+ivVB/ws9Asejoti/oje3cyJYALFpvl/JB0O2Qyyx8=
 			</data>
 		</dict>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LoKObbgD+ARQiWWwU1xm/uNkTEsl5/GAtBLZdhZN5T8=
+			ZQdUBbGyfPm8CC+5O8QzbhYG2Rc4+wpyzTP2mLgpi9I=
 			</data>
 		</dict>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QWYs52Kw6aZsitBb4qPN2Z9l/iUAiOUCV2VzrGsSgo=
+			X22wS8HpUmmCEBN9UOOvMxEpFx44k2V1bcE0eDLsVxo=
 			</data>
 		</dict>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LoKObbgD+ARQiWWwU1xm/uNkTEsl5/GAtBLZdhZN5T8=
+			ZQdUBbGyfPm8CC+5O8QzbhYG2Rc4+wpyzTP2mLgpi9I=
 			</data>
 		</dict>
 		<key>Modules/KycVerificationSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vR4kzZKCsIAxHCNWqutsJvvxdLazqDlWAWsrK92cL7c=
+			El8jnHZDxzKoJ/fPjsVoI96NmTMzEYQuYkW0UlSMyaI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

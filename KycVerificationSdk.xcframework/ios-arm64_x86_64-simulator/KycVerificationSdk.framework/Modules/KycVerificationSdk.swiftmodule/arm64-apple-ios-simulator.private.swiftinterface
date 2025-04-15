@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KycVerificationSdk
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KycVerificationSdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import KycVerificationSdk
 import Swift
@@ -10,6 +10,20 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public enum Environment : Swift.Int {
+  case PROD
+  case TEST
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol CF1ClickOnboardingResponseDelegate {
+  @objc func onVerification(_ verificationResponse: KycVerificationSdk.CF1ClickOnboardingResponse)
+  @objc func onVerificationError(_ errorResponse: KycVerificationSdk.CF1ClickOnboardingErrorResponse)
+  @objc func onUserDrop(_ userDropResponse: KycVerificationSdk.CFUserDropResponse)
+}
 @_hasMissingDesignatedInitializers @objc final public class CFKycVerificationSession : ObjectiveC.NSObject {
   final public func getFormUrl() -> Swift.String
   @_inheritsConvenienceInitializers @objc final public class Builder : ObjectiveC.NSObject {
@@ -24,13 +38,16 @@ import _SwiftConcurrencyShims
   @objc func onVerificationCompletion(verificationResponse: KycVerificationSdk.CFVerificationResponse)
   @objc func onErrorResponse(errorReponse: KycVerificationSdk.CFErrorResponse)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class CFKycVerificationService : ObjectiveC.NSObject {
-  public static func getInstance() -> KycVerificationSdk.CFKycVerificationService
-  @objc final public func doVerification(_ session: KycVerificationSdk.CFKycVerificationSession, _ viewController: UIKit.UIViewController, _ callback: any KycVerificationSdk.VerificationResponseDelegate) throws
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class CFVerificationService : ObjectiveC.NSObject {
+  public static func getInstance() -> KycVerificationSdk.CFVerificationService
+  @objc final public func doVerification(_ url: Swift.String, _ viewController: UIKit.UIViewController, _ callback: any KycVerificationSdk.VerificationResponseDelegate) throws
+  @objc final public func open1ClickOnboarding(_ sessionId: Swift.String, _ environment: KycVerificationSdk.Environment, _ viewController: UIKit.UIViewController, _ callback: any KycVerificationSdk.CF1ClickOnboardingResponseDelegate) throws
   @objc deinit
 }
-@objc public enum KycVerificationError : Swift.Int, Swift.Error {
+@objc public enum VerificationError : Swift.Int, Swift.Error {
   case URL_MISSING
+  case INVALID_URL
+  case SESSION_ID_MISSING
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -40,7 +57,7 @@ import _SwiftConcurrencyShims
     get
   }
 }
-extension KycVerificationSdk.KycVerificationError : Swift.CustomStringConvertible {
+extension KycVerificationSdk.VerificationError : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -60,6 +77,28 @@ extension KycVerificationSdk.KycVerificationError : Swift.CustomStringConvertibl
   @objc override dynamic public init()
   @objc deinit
 }
-extension KycVerificationSdk.KycVerificationError : Swift.Equatable {}
-extension KycVerificationSdk.KycVerificationError : Swift.Hashable {}
-extension KycVerificationSdk.KycVerificationError : Swift.RawRepresentable {}
+@_inheritsConvenienceInitializers @objc public class CF1ClickOnboardingResponse : ObjectiveC.NSObject {
+  public var verificationId: Swift.String?
+  public var authCode: Swift.String?
+  public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CF1ClickOnboardingErrorResponse : ObjectiveC.NSObject {
+  public var verificationId: Swift.String?
+  public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CFUserDropResponse : ObjectiveC.NSObject {
+  public var verificationId: Swift.String?
+  public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension KycVerificationSdk.Environment : Swift.Equatable {}
+extension KycVerificationSdk.Environment : Swift.Hashable {}
+extension KycVerificationSdk.Environment : Swift.RawRepresentable {}
+extension KycVerificationSdk.VerificationError : Swift.Equatable {}
+extension KycVerificationSdk.VerificationError : Swift.Hashable {}
+extension KycVerificationSdk.VerificationError : Swift.RawRepresentable {}

@@ -1,9 +1,381 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "KycVerificationSdk",
+    "printedName": "KycVerificationSdk",
     "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PROD",
+            "printedName": "PROD",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KycVerificationSdk.Environment.Type) -> KycVerificationSdk.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KycVerificationSdk.Environment",
+                    "usr": "c:@M@KycVerificationSdk@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KycVerificationSdk.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KycVerificationSdk.Environment",
+                        "usr": "c:@M@KycVerificationSdk@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KycVerificationSdk@E@Environment@EnvironmentPROD",
+            "mangledName": "$s18KycVerificationSdk11EnvironmentO4PRODyA2CmF",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "TEST",
+            "printedName": "TEST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KycVerificationSdk.Environment.Type) -> KycVerificationSdk.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KycVerificationSdk.Environment",
+                    "usr": "c:@M@KycVerificationSdk@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KycVerificationSdk.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KycVerificationSdk.Environment",
+                        "usr": "c:@M@KycVerificationSdk@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KycVerificationSdk@E@Environment@EnvironmentTEST",
+            "mangledName": "$s18KycVerificationSdk11EnvironmentO4TESTyA2CmF",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KycVerificationSdk.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KycVerificationSdk.Environment",
+                    "usr": "c:@M@KycVerificationSdk@E@Environment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18KycVerificationSdk11EnvironmentO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18KycVerificationSdk11EnvironmentO8rawValueACSgSi_tcfc",
+            "moduleName": "KycVerificationSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk11EnvironmentO8rawValueSivp",
+            "mangledName": "$s18KycVerificationSdk11EnvironmentO8rawValueSivp",
+            "moduleName": "KycVerificationSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk11EnvironmentO8rawValueSivg",
+                "mangledName": "$s18KycVerificationSdk11EnvironmentO8rawValueSivg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@KycVerificationSdk@E@Environment",
+        "mangledName": "$s18KycVerificationSdk11EnvironmentO",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KycVerificationSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CF1ClickOnboardingResponseDelegate",
+        "printedName": "CF1ClickOnboardingResponseDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onVerification",
+            "printedName": "onVerification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CF1ClickOnboardingResponse",
+                "printedName": "KycVerificationSdk.CF1ClickOnboardingResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KycVerificationSdk@objc(pl)CF1ClickOnboardingResponseDelegate(im)onVerification:",
+            "mangledName": "$s18KycVerificationSdk34CF1ClickOnboardingResponseDelegateP02onB0yyAA0defG0CF",
+            "moduleName": "KycVerificationSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onVerificationError",
+            "printedName": "onVerificationError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CF1ClickOnboardingErrorResponse",
+                "printedName": "KycVerificationSdk.CF1ClickOnboardingErrorResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingErrorResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KycVerificationSdk@objc(pl)CF1ClickOnboardingResponseDelegate(im)onVerificationError:",
+            "mangledName": "$s18KycVerificationSdk34CF1ClickOnboardingResponseDelegateP02onB5ErroryyAA0defjG0CF",
+            "moduleName": "KycVerificationSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUserDrop",
+            "printedName": "onUserDrop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CFUserDropResponse",
+                "printedName": "KycVerificationSdk.CFUserDropResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CFUserDropResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KycVerificationSdk@objc(pl)CF1ClickOnboardingResponseDelegate(im)onUserDrop:",
+            "mangledName": "$s18KycVerificationSdk34CF1ClickOnboardingResponseDelegateP10onUserDropyyAA06CFUserkG0CF",
+            "moduleName": "KycVerificationSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : KycVerificationSdk.CF1ClickOnboardingResponseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@KycVerificationSdk@objc(pl)CF1ClickOnboardingResponseDelegate",
+        "mangledName": "$s18KycVerificationSdk34CF1ClickOnboardingResponseDelegateP",
+        "moduleName": "KycVerificationSdk",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
       {
         "kind": "Import",
         "name": "Foundation",
@@ -144,6 +516,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -236,6 +622,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -379,6 +779,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -400,8 +816,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CFKycVerificationService",
-        "printedName": "CFKycVerificationService",
+        "name": "CFVerificationService",
+        "printedName": "CFVerificationService",
         "children": [
           {
             "kind": "Function",
@@ -410,14 +826,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CFKycVerificationService",
-                "printedName": "KycVerificationSdk.CFKycVerificationService",
-                "usr": "c:@M@KycVerificationSdk@objc(cs)CFKycVerificationService"
+                "name": "CFVerificationService",
+                "printedName": "KycVerificationSdk.CFVerificationService",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CFVerificationService"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18KycVerificationSdk05CFKycB7ServiceC11getInstanceACyFZ",
-            "mangledName": "$s18KycVerificationSdk05CFKycB7ServiceC11getInstanceACyFZ",
+            "usr": "s:18KycVerificationSdk21CFVerificationServiceC11getInstanceACyFZ",
+            "mangledName": "$s18KycVerificationSdk21CFVerificationServiceC11getInstanceACyFZ",
             "moduleName": "KycVerificationSdk",
             "static": true,
             "declAttributes": [
@@ -438,9 +854,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CFKycVerificationSession",
-                "printedName": "KycVerificationSdk.CFKycVerificationSession",
-                "usr": "c:@M@KycVerificationSdk@objc(cs)CFKycVerificationSession"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -451,13 +867,60 @@
               {
                 "kind": "TypeNominal",
                 "name": "VerificationResponseDelegate",
-                "printedName": "KycVerificationSdk.VerificationResponseDelegate",
+                "printedName": "any KycVerificationSdk.VerificationResponseDelegate",
                 "usr": "c:@M@KycVerificationSdk@objc(pl)VerificationResponseDelegate"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KycVerificationSdk@objc(cs)CFKycVerificationService(im)doVerification:::error:",
-            "mangledName": "$s18KycVerificationSdk05CFKycB7ServiceC02doB0yyAA0dB7SessionC_So16UIViewControllerCAA0B16ResponseDelegate_ptKF",
+            "usr": "c:@M@KycVerificationSdk@objc(cs)CFVerificationService(im)doVerification:::error:",
+            "mangledName": "$s18KycVerificationSdk21CFVerificationServiceC02doB0yySS_So16UIViewControllerCAA0B16ResponseDelegate_ptKF",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open1ClickOnboarding",
+            "printedName": "open1ClickOnboarding(_:_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KycVerificationSdk.Environment",
+                "usr": "c:@M@KycVerificationSdk@E@Environment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CF1ClickOnboardingResponseDelegate",
+                "printedName": "any KycVerificationSdk.CF1ClickOnboardingResponseDelegate",
+                "usr": "c:@M@KycVerificationSdk@objc(pl)CF1ClickOnboardingResponseDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KycVerificationSdk@objc(cs)CFVerificationService(im)open1ClickOnboarding::::error:",
+            "mangledName": "$s18KycVerificationSdk21CFVerificationServiceC20open1ClickOnboardingyySS_AA11EnvironmentOSo16UIViewControllerCAA03CF1gH16ResponseDelegate_ptKF",
             "moduleName": "KycVerificationSdk",
             "declAttributes": [
               "Final",
@@ -469,8 +932,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@KycVerificationSdk@objc(cs)CFKycVerificationService",
-        "mangledName": "$s18KycVerificationSdk05CFKycB7ServiceC",
+        "usr": "c:@M@KycVerificationSdk@objc(cs)CFVerificationService",
+        "mangledName": "$s18KycVerificationSdk21CFVerificationServiceC",
         "moduleName": "KycVerificationSdk",
         "declAttributes": [
           "AccessControl",
@@ -484,6 +947,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -547,8 +1024,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "KycVerificationError",
-        "printedName": "KycVerificationError",
+        "name": "VerificationError",
+        "printedName": "VerificationError",
         "children": [
           {
             "kind": "Var",
@@ -558,24 +1035,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(KycVerificationSdk.KycVerificationError.Type) -> KycVerificationSdk.KycVerificationError",
+                "printedName": "(KycVerificationSdk.VerificationError.Type) -> KycVerificationSdk.VerificationError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KycVerificationError",
-                    "printedName": "KycVerificationSdk.KycVerificationError",
-                    "usr": "c:@M@KycVerificationSdk@E@KycVerificationError"
+                    "name": "VerificationError",
+                    "printedName": "KycVerificationSdk.VerificationError",
+                    "usr": "c:@M@KycVerificationSdk@E@VerificationError"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "KycVerificationSdk.KycVerificationError.Type",
+                    "printedName": "KycVerificationSdk.VerificationError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KycVerificationError",
-                        "printedName": "KycVerificationSdk.KycVerificationError",
-                        "usr": "c:@M@KycVerificationSdk@E@KycVerificationError"
+                        "name": "VerificationError",
+                        "printedName": "KycVerificationSdk.VerificationError",
+                        "usr": "c:@M@KycVerificationSdk@E@VerificationError"
                       }
                     ]
                   }
@@ -583,13 +1060,95 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@KycVerificationSdk@E@KycVerificationError@KycVerificationErrorURL_MISSING",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO11URL_MISSINGyA2CmF",
+            "usr": "c:@M@KycVerificationSdk@E@VerificationError@VerificationErrorURL_MISSING",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO11URL_MISSINGyA2CmF",
             "moduleName": "KycVerificationSdk",
             "declAttributes": [
               "ObjC"
             ],
             "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "INVALID_URL",
+            "printedName": "INVALID_URL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KycVerificationSdk.VerificationError.Type) -> KycVerificationSdk.VerificationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VerificationError",
+                    "printedName": "KycVerificationSdk.VerificationError",
+                    "usr": "c:@M@KycVerificationSdk@E@VerificationError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KycVerificationSdk.VerificationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VerificationError",
+                        "printedName": "KycVerificationSdk.VerificationError",
+                        "usr": "c:@M@KycVerificationSdk@E@VerificationError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KycVerificationSdk@E@VerificationError@VerificationErrorINVALID_URL",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO11INVALID_URLyA2CmF",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "SESSION_ID_MISSING",
+            "printedName": "SESSION_ID_MISSING",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KycVerificationSdk.VerificationError.Type) -> KycVerificationSdk.VerificationError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VerificationError",
+                    "printedName": "KycVerificationSdk.VerificationError",
+                    "usr": "c:@M@KycVerificationSdk@E@VerificationError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KycVerificationSdk.VerificationError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VerificationError",
+                        "printedName": "KycVerificationSdk.VerificationError",
+                        "usr": "c:@M@KycVerificationSdk@E@VerificationError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KycVerificationSdk@E@VerificationError@VerificationErrorSESSION_ID_MISSING",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO18SESSION_ID_MISSINGyA2CmF",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Constructor",
@@ -599,13 +1158,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KycVerificationSdk.KycVerificationError?",
+                "printedName": "KycVerificationSdk.VerificationError?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KycVerificationError",
-                    "printedName": "KycVerificationSdk.KycVerificationError",
-                    "usr": "c:@M@KycVerificationSdk@E@KycVerificationError"
+                    "name": "VerificationError",
+                    "printedName": "KycVerificationSdk.VerificationError",
+                    "usr": "c:@M@KycVerificationSdk@E@VerificationError"
                   }
                 ],
                 "usr": "s:Sq"
@@ -618,8 +1177,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18KycVerificationSdk0aB5ErrorO8rawValueACSgSi_tcfc",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO8rawValueACSgSi_tcfc",
+            "usr": "s:18KycVerificationSdk0B5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO8rawValueACSgSi_tcfc",
             "moduleName": "KycVerificationSdk",
             "implicit": true,
             "init_kind": "Designated"
@@ -637,8 +1196,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18KycVerificationSdk0aB5ErrorO8rawValueSivp",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO8rawValueSivp",
+            "usr": "s:18KycVerificationSdk0B5ErrorO8rawValueSivp",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO8rawValueSivp",
             "moduleName": "KycVerificationSdk",
             "implicit": true,
             "accessors": [
@@ -655,8 +1214,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18KycVerificationSdk0aB5ErrorO8rawValueSivg",
-                "mangledName": "$s18KycVerificationSdk0aB5ErrorO8rawValueSivg",
+                "usr": "s:18KycVerificationSdk0B5ErrorO8rawValueSivg",
+                "mangledName": "$s18KycVerificationSdk0B5ErrorO8rawValueSivg",
                 "moduleName": "KycVerificationSdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -676,8 +1235,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18KycVerificationSdk0aB5ErrorO03_nsD6DomainSSvpZ",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO03_nsD6DomainSSvpZ",
+            "usr": "s:18KycVerificationSdk0B5ErrorO03_nsD6DomainSSvpZ",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO03_nsD6DomainSSvpZ",
             "moduleName": "KycVerificationSdk",
             "static": true,
             "implicit": true,
@@ -695,8 +1254,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18KycVerificationSdk0aB5ErrorO03_nsD6DomainSSvgZ",
-                "mangledName": "$s18KycVerificationSdk0aB5ErrorO03_nsD6DomainSSvgZ",
+                "usr": "s:18KycVerificationSdk0B5ErrorO03_nsD6DomainSSvgZ",
+                "mangledName": "$s18KycVerificationSdk0B5ErrorO03_nsD6DomainSSvgZ",
                 "moduleName": "KycVerificationSdk",
                 "static": true,
                 "implicit": true,
@@ -717,8 +1276,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18KycVerificationSdk0aB5ErrorO11descriptionSSvp",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO11descriptionSSvp",
+            "usr": "s:18KycVerificationSdk0B5ErrorO11descriptionSSvp",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO11descriptionSSvp",
             "moduleName": "KycVerificationSdk",
             "declAttributes": [
               "AccessControl"
@@ -738,8 +1297,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18KycVerificationSdk0aB5ErrorO11descriptionSSvg",
-                "mangledName": "$s18KycVerificationSdk0aB5ErrorO11descriptionSSvg",
+                "usr": "s:18KycVerificationSdk0B5ErrorO11descriptionSSvg",
+                "mangledName": "$s18KycVerificationSdk0B5ErrorO11descriptionSSvg",
                 "moduleName": "KycVerificationSdk",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -759,8 +1318,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvp",
-            "mangledName": "$s18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvp",
+            "usr": "s:18KycVerificationSdk0B5ErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s18KycVerificationSdk0B5ErrorO20localizedDescriptionSSvp",
             "moduleName": "KycVerificationSdk",
             "declAttributes": [
               "AccessControl"
@@ -780,8 +1339,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvg",
-                "mangledName": "$s18KycVerificationSdk0aB5ErrorO20localizedDescriptionSSvg",
+                "usr": "s:18KycVerificationSdk0B5ErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s18KycVerificationSdk0B5ErrorO20localizedDescriptionSSvg",
                 "moduleName": "KycVerificationSdk",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -790,8 +1349,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "c:@M@KycVerificationSdk@E@KycVerificationError",
-        "mangledName": "$s18KycVerificationSdk0aB5ErrorO",
+        "usr": "c:@M@KycVerificationSdk@E@VerificationError",
+        "mangledName": "$s18KycVerificationSdk0B5ErrorO",
         "moduleName": "KycVerificationSdk",
         "declAttributes": [
           "AccessControl",
@@ -799,6 +1358,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1150,6 +1723,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1467,6 +2054,1143 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CF1ClickOnboardingResponse",
+        "printedName": "CF1ClickOnboardingResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verificationId",
+            "printedName": "verificationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvp",
+            "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvg",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvs",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvM",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC14verificationIdSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authCode",
+            "printedName": "authCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvp",
+            "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvg",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvs",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvM",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC8authCodeSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvp",
+            "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvg",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvs",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvM",
+                "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC6statusSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CF1ClickOnboardingResponse",
+                "printedName": "KycVerificationSdk.CF1ClickOnboardingResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingResponse"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingResponse(im)init",
+            "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseCACycfc",
+            "moduleName": "KycVerificationSdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingResponse",
+        "mangledName": "$s18KycVerificationSdk26CF1ClickOnboardingResponseC",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CF1ClickOnboardingErrorResponse",
+        "printedName": "CF1ClickOnboardingErrorResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verificationId",
+            "printedName": "verificationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvp",
+            "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvg",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvs",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvM",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC14verificationIdSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvp",
+            "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvg",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvs",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvM",
+                "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC6statusSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CF1ClickOnboardingErrorResponse",
+                "printedName": "KycVerificationSdk.CF1ClickOnboardingErrorResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingErrorResponse"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingErrorResponse(im)init",
+            "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseCACycfc",
+            "moduleName": "KycVerificationSdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KycVerificationSdk@objc(cs)CF1ClickOnboardingErrorResponse",
+        "mangledName": "$s18KycVerificationSdk31CF1ClickOnboardingErrorResponseC",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CFUserDropResponse",
+        "printedName": "CFUserDropResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verificationId",
+            "printedName": "verificationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvp",
+            "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvg",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvs",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvM",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC14verificationIdSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18KycVerificationSdk18CFUserDropResponseC6statusSSSgvp",
+            "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC6statusSSSgvp",
+            "moduleName": "KycVerificationSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC6statusSSSgvg",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC6statusSSSgvg",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC6statusSSSgvs",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC6statusSSSgvs",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18KycVerificationSdk18CFUserDropResponseC6statusSSSgvM",
+                "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC6statusSSSgvM",
+                "moduleName": "KycVerificationSdk",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CFUserDropResponse",
+                "printedName": "KycVerificationSdk.CFUserDropResponse",
+                "usr": "c:@M@KycVerificationSdk@objc(cs)CFUserDropResponse"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KycVerificationSdk@objc(cs)CFUserDropResponse(im)init",
+            "mangledName": "$s18KycVerificationSdk18CFUserDropResponseCACycfc",
+            "moduleName": "KycVerificationSdk",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KycVerificationSdk@objc(cs)CFUserDropResponse",
+        "mangledName": "$s18KycVerificationSdk18CFUserDropResponseC",
+        "moduleName": "KycVerificationSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1521,242 +3245,60 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/JSONDecoderHelper.swift",
-      "kind": "StringLiteral",
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/KycVerificationConstants.swift",
+      "kind": "Array",
+      "offset": 187,
+      "length": 87,
+      "value": "[\"https:\/\/forms-test.cashfree.com\", \"https:\/\/forms.cashfree.com\"]"
+    },
+    {
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/KycVerificationConstants.swift",
+      "kind": "IntegerLiteral",
       "offset": 338,
-      "length": 33,
-      "value": "\"Failed to decode JSON: \""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/JSONDecoderHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 370,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/builder\/CFKycVerificationSession.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 24,
-      "value": "\"KycVerificationSdk.CFKycVerificationSession\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 864,
-      "length": 33,
-      "value": "\"CFKycVerificationViewController\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1025,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1299,
-      "length": 12,
-      "value": "\"kycWebView\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1470,
-      "length": 318,
-      "value": "\"    var meta = document.createElement('meta');\n    meta.name = 'viewport';\n    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\n    document.getElementsByTagName('head')[0].appendChild(meta);\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1839,
       "length": 4,
-      "value": "true"
+      "value": "1"
     },
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/KycVerificationConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
-      "length": 15,
-      "value": "\"nativeProcess\""
+      "offset": 390,
+      "length": 40,
+      "value": "\"https:\/\/user-vault.cashfree.com\/signup\""
     },
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CF1ClickOBViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2243,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2259,
+      "offset": 1783,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2698,
-      "length": 18,
-      "value": "\"Swipe recognized\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2936,
-      "length": 9,
-      "value": "\"Warning\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2956,
-      "length": 51,
-      "value": "\"Are you sure you want to cancel the verification?\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3081,
-      "length": 5,
-      "value": "\"Yes\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3251,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3349,
-      "length": 29,
-      "value": "\"User cancelled Verification\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3521,
-      "length": 4,
-      "value": "\"No\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3690,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3713,
-      "length": 28,
-      "value": "\"Alert controller presented\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4266,
-      "length": 21,
-      "value": "\"closeViewController\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4325,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4474,
-      "length": 8,
-      "value": "\"action\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4549,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4712,
-      "length": 13,
-      "value": "\"Data is nil\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4916,
-      "length": 22,
-      "value": "\"verificationResponse\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5017,
-      "length": 11,
-      "value": "\"webErrors\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5535,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5856,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/view\/CFKycVerificationViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 344,
-      "length": 31,
-      "value": "\"KycVerificationSdk.CFKycVerificationViewController\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/service\/CFKycVerificationService.swift",
-      "kind": "StringLiteral",
-      "offset": 719,
-      "length": 30,
-      "value": "\"NavigationControllerNotFound\""
-    },
-    {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/service\/CFKycVerificationService.swift",
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/VerificationError.swift",
       "kind": "IntegerLiteral",
-      "offset": 757,
-      "length": 1,
+      "offset": 201,
+      "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/service\/CFKycVerificationService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1030,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/VerificationError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 222,
+      "length": 18,
+      "value": "2"
     },
     {
-      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/New Folder With Items\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/utils\/KycVerificationError.swift",
-      "kind": "StringLiteral",
-      "offset": 361,
-      "length": 44,
-      "value": "\"The \"formUrl\" is missing in the request.\""
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/controller\/CF1ClickOBPresentationController.swift",
+      "kind": "FloatLiteral",
+      "offset": 393,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/renubisht\/Documents\/cashfree_sdk\/vswebapp\/cashfree-kyc-verification-sdk-ios\/KycVerificationSdk\/KycVerificationSdk\/controller\/CF1ClickOBPresentationController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 498,
+      "length": 1,
+      "value": "0"
     }
   ]
 }

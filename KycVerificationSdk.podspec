@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "KycVerificationSdk"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Cocoapods implementation of Cashfree Kyc Verification SDK"
   
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "Cashfree Payments" => "developers@cashfree.com" }
   s.source       = { :git => "https://github.com/cashfree/cashfree-kyc-verification-sdk-ios.git", :tag =>  s.version.to_s }
-  s.social_media_url    = "https://twitter.com/gocashfree"
+  s.social_media_url    = "https://www.linkedin.com/company/cashfree/"
   s.platform        = :ios, "16.4"
   s.vendored_frameworks    = "KycVerificationSdk.xcframework"
   s.swift_version        = "5.9"
